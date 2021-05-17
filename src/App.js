@@ -1,11 +1,12 @@
 // import logo from './logo.svg'; need to be deleted 
 import './App.css';
+import Header from './Header'
 
 function App() {
   return (
     <div className="App">
-      <h1>Hello! ecommerce!</h1>
-
+      {/* <h1>Hello! ecommerce!</h1> */}
+      <Header />
       
       {/* need to be deleted 
       <header className="App-header">
