@@ -1,6 +1,8 @@
 import React from 'react'
 import './Header.css'
 import header_logo from './ECommer.png'
+import SearchIcon from '@material-ui/icons/Search'
+import ShoppingCartIcon from '@material-ui/icons/ShoppingCart'
 
 function Header() {
     return (
@@ -8,10 +10,11 @@ function Header() {
 
             <img className='header_logo' src={header_logo} alt='header_logo' />
 
-            <div
-            className='header_search'>
+            <div className='header_search'>
                 <input
                 className='header_searchInput' type='text' />
+                <SearchIcon
+                    className='header_searchIcon' />
             </div>
 
             <div className='header_nav'>
@@ -41,7 +44,11 @@ function Header() {
                     className='header_optionLineTwo'
                     >Prime</span>
                 </div>
-
+                
+                <div className='header_optionCart'>
+                    <ShoppingCartIcon />
+                    <span className='header_optionLineTwo header_cartCount'>0</span>
+                </div>
             </div>
 
         </div>
